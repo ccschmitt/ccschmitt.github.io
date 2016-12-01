@@ -1,0 +1,566 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;
+	mso-font-alt:"ESRI NIMA VMAP1&2 PT";
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:8192 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:SegoeScript;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 684670034 22 0 262175 0;}
+@font-face
+	{font-family:"\@Microsoft YaHei";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 684670034 22 0 262175 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:Mangal;
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:Mangal;
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;
+	font-style:italic;}
+p.MsoList, li.MsoList, div.MsoList
+	{mso-style-unhide:no;
+	mso-style-parent:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:Mangal;
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:Mangal;
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;}
+p.Heading, li.Heading, div.Heading
+	{mso-style-name:Heading;
+	mso-style-unhide:no;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Microsoft YaHei";
+	mso-bidi-font-family:Mangal;
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;}
+p.Index, li.Index, div.Index
+	{mso-style-name:Index;
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:Mangal;
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:56.7pt 56.7pt 56.7pt 56.7pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="keywords" content="maps, cartography"/>
+	<title>Cody Schmitt</title>
+
+	<!--put your Bootstrap stylesheet links above style.css-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body lang=3DEN-US style=3D'tab-interval:35.45pt;line-break:strict'>
+
+<div class=3DWordSection1 "text-center">
+
+<p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span
+style=3D'font-size:15.0pt'>Portfolio Content List</span><span style=3D'font=
+-size:
+14.0pt'><o:p></o:p></span></p>
+
+<p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span
+style=3D'font-size:14.0pt'>Cody Schmitt<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-size:14.0pt'><o:p>&nbsp;</o:p></sp=
+an></p>
+
+<p class=3DMsoNormal><b><u><span style=3D'font-size:14.0pt'>Cartography:</s=
+pan></u></b></p>
+
+<p class=3DMsoNormal>Nevada Archaeological Points of Interest</p>
+
+<p class=3DMsoNormal>A Political Map of Africa</p>
+
+<p class=3DMsoNormal>The Danger of Nuclear Power</p>
+
+<p class=3DMsoNormal>Global Firearm-Death Rates Per Year</p>
+
+<p class=3DMsoNormal>The North American Weekly Weather Report</p>
+
+<p class=3DMsoNormal>Peace, Calm, and Serenity: Finding Peace and Calm in t=
+hese
+Archaeological Sites of Nevada</p>
+
+<p class=3DMsoNormal>The Trempealeau Archaeology Project</p>
+
+<p class=3DMsoNormal>Trempealeau Map Project<span style=3D'mso-fareast-font=
+-family:
+SegoeScript;mso-bidi-font-family:SegoeScript'><o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>la tournée de l'Est de l'Australie<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Dante's Inferno<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Mississippian Localities in the Village of Trempealeau<o:p></o=
+:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Viable Sites for Lab and Office Construction</span></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><b><u><span style=3D'font-size:14.0pt;mso-fareast-font=
+-family:
+SegoeScript;mso-bidi-font-family:SegoeScript'>Graphic Design:</span></u></b=
+><span
+style=3D'mso-fareast-font-family:SegoeScript;mso-bidi-font-family:SegoeScri=
+pt'><o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Effigy Mounds Trempealeau Excavations 1<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Effigy Mounds Trempealeau Excavations 2<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>2016 Field Season T-Shirt Design<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Various Logo Designs (for my colleague's new company startup)<=
+o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – Welcome to the Little Bluff Mounds<o:p></o:p><=
+/span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – Archaeology Beneath Your Feet<o:p></o:p></span=
+></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – A Mississippian Settlement<o:p></o:p></span></=
+p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – The Driftless Area<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – Trempealeau Mountain<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – The Web of Life<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – The Perrot Ecosystem<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – Hunters, Gatherers, Fishers, and Gardeners<o:p=
+></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – The First Intensive Corn Farmers: Mississippian
+and Oneota People<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel –Oneota Tradition<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – Woodland and Mississippian House Styles Through
+Time<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – The Fur Trade in Trempealeau<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – A Gathering of Spirits<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – Identity Through Art<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – Tribes of Wisconsin Today<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – Mapping and Mound Building<o:p></o:p></span></=
+p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Exhibit Panel – Stories Below the Surface<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>1839 Map by Joseph Nicolet with Abandoned Waubesha Village<o:p=
+></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Ho-Chunk Removals Map<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>1884 Letter from Lewis to Hill Concerning Trempealeau Platform
+Mounds</span></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><b><u><span style=3D'font-size:14.0pt;mso-fareast-font=
+-family:
+SegoeScript;mso-bidi-font-family:SegoeScript'>Writing:</span></u></b><span
+style=3D'mso-fareast-font-family:SegoeScript;mso-bidi-font-family:SegoeScri=
+pt'><o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Aeneas as a Leader- The Beginning of Rome<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Aeneas Vs. Turnus- Leading By Example<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Interpreting Complexity<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Were Luxury Foods The First Domesticates?<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Site 112: Survey and Excavation<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>A Letter to Gov. Rick Scott<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>The Holy Ghost People<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Aztec Violence and Warfare<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Rice Domestication in China- The Cause of Sedentism or a
+By-Product?<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Violence Amongst the LBK- Pits of Death in Talheim, Germany<o:=
+p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Bipedalism and the Genus Homo<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>What Made Us Human? Home Base and Other Theories Based on the =
+FLK
+Zinj Site and Others<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>The Human Revolution- Anatomically Modern Vs. Behaviorally Mod=
+ern
+Humans<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Animal-Human Hybrids of Egypt<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+SegoeScript'>Lab Report- The Effect of Humidity on the Aggregation of </spa=
+n><i
+style=3D'mso-bidi-font-style:normal'><span style=3D'mso-fareast-font-family=
+:SegoeScript;
+mso-bidi-font-family:"Times New Roman"'>Porcellio Scaber</span></i><span
+style=3D'mso-fareast-font-family:SegoeScript;mso-bidi-font-family:"Times Ne=
+w Roman"'><o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Chemical Equilibrium and Le Chatelier's Principle<o:p></=
+o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Preparation of Aspirin and Some Flavoring Esters<o:p></o=
+:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Light, Color, and Solutions<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Why Do We Laugh?<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Comic Imagination in Edo-period Japan: The Humor in Doub=
+le
+Suicides<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Data Project: Gullickson's Glenn Point Data<o:p></o:p></=
+span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'><span style=3D'mso-tab-count:1'>            </span>&gt;
+Madison Triangular Points publication<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Otto Rupius: The Life and Death of A German Writer<o:p><=
+/o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Christian Persecution <o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>National Identity and the Role of the West in East Asia<=
+o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Dwelling on Violence<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>The Options Conerning the Dropping of the Atomic Bomb <o=
+:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>The Nanjing Massacre as Portrayed in International Media=
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Humor in Early Modern Japan: the Prominence of the Nose<=
+o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>King Romulus and King Numa: A Comparison of Kings<o:p></=
+o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Code Talkers<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Love in Vampire Literature and Film<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Biological Weapons<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>The Stem Cells Controversy<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Pier Delle Vigne: Dante's Wrongful Pity<o:p></o:p></span=
+></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>The Absence of No Doesn't Mean Yes: Is Consent Complicat=
+ed?<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>Roman Mothers and Fathers: What Happened to Chastity?<o:=
+p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-fareast-font-family:SegoeScript;mso=
+-bidi-font-family:
+"Times New Roman"'>The Nomadic, Magical and Scientific Narratives</span></p>
+
+</div>
+
+</body>
+</html>

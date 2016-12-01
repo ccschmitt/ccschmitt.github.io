@@ -1,0 +1,100 @@
+div#container {
+	width:500px;
+	background-color:#ff6622;
+	padding:10px;
+	margin:100px;
+	border:3px gray dashed;
+}
+
+h1	{
+	color:#b30000;
+	font-size:20px;
+	font-weight:bold;
+}
+
+span.emphasize{
+	font-weight:bold;
+}
+
+.portfolio-thumbnail {
+		background-color: #e6e6e6;
+		border-width: 4px;
+		border-style: solid;
+		border-color: #000000;
+}
+
+.thumbnail{
+	position: relative;
+	width: 400 px;
+	height: 400 px;
+	overflow: hidden;
+}
+
+.portfolio-thumbnail img {
+		height: 400px;
+}
+
+.thumbnail img	{
+	position: absolute;
+	left: 90%;
+	top: 90%;
+	height: 100%;
+	width: auto;
+	-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+}
+
+.thumbnail img.portrait	{
+	width: 100%;
+	height: auto;
+}
+.navbar-header	{
+		height: 40px;
+		font-weight:bold;
+}
+
+.navbar-nav	{
+		height:40px;
+}
+
+.navbar-brand {
+	
+}
+
+.main-navbar	{
+		height:40px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.img-responsive {display:block; height: 5px; width: 50%;}
+.item {display:block; height: 650px; width: 100%;}
+.image{display:block; height: 650px; width: 100%;}
+
+h1, h3, h4, h5, h6 {
+    font-family: 'Tillana', cursive;
+}
+p {
+	font-family: 'Tangerine', cursive;	
+}
+
+title, h2 {
+	font-family: 'Julius Sans One', sans-serif;	
+}
+	
+.jumbotron h1{
+	color:#b30000;
+	
+}
+.jumbotron h2{
+	color:#b30000;
+	font-family: 'Tillana', cursive;
+}
+
+.jumbotron {
+	background-color:#000000;
+	padding:30px;
+}
