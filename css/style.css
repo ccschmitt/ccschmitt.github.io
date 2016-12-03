@@ -8,13 +8,23 @@ div#container {
 
 h1	{
 	color:#b30000;
-	font-size:20px;
+	font-weight:bold;
+}
+h4	{
+	color:#b30000;
 	font-weight:bold;
 }
 
+h5	{
+	font-size:50px;
+}
+h6	{
+	font-size: 30px;
+}
 span.emphasize{
 	font-weight:bold;
 }
+
 
 .portfolio-thumbnail {
 		background-color: #e6e6e6;
@@ -71,13 +81,14 @@ span.emphasize{
 }
 
 .img-responsive {display:block; height: 5px; width: 50%;}
-.item {display:block; height: 650px; width: 100%;}
+.item {display:block; height: 400px; width: 100%;}
 .image{display:block; height: 650px; width: 100%;}
 
 
 	
 .jumbotron h1{
 	color:#b30000;
+	font-size: 75px;
 }
 .jumbotron h2{
 	color:#b30000;
