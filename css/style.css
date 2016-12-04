@@ -13,13 +13,23 @@ h1	{
 h4	{
 	color:#b30000;
 	font-weight:bold;
+	font-family: "Georgia", Charcoal, serif;
 }
 
 h5	{
 	font-size:50px;
 }
+p	{
+	font-family: "Verdana", Geneva, sans-serif;
+}
+
+h2	{
+	font-family: "Verdana", Geneva, sans-serif;
+}
+
 h6	{
 	font-size: 30px;
+	font-family: "Times New Roman", Times, serif;
 }
 span.emphasize{
 	font-weight:bold;
@@ -89,9 +99,11 @@ span.emphasize{
 .jumbotron h1{
 	color:#b30000;
 	font-size: 75px;
+	font-family: "Georgia", Charcoal, serif;
 }
 .jumbotron h2{
 	color:#b30000;
+	font-family: "Times New Roman", Times, serif;
 }
 
 .jumbotron {
