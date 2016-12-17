@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Testing</title>
+  <title>The Hominin Map Project</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
   <script src="jquery-3.1.1.min.js"></script>
@@ -22,11 +22,12 @@
     center: [0, 0],
     zoom: 2,
 	maxZoom: 16,
+	minZoom: 1,
 	maxBounds: [
 	[90, -180],
 	[-90, 180]
 	],
-	maxBoundsViscosity: 2.0
+	maxBoundsViscosity: 3.0
 });
 
   // load a tile layer
