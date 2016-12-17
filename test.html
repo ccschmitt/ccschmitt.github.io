@@ -1,10 +1,9 @@
 <html>
 <head>
   <title>Testing</title>
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" type="text/css" />
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <script src="jquery-3.1.1.min.js"></script>
-  <script src="SliderControl.js"></script>
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
   <link href="http://code.jquery.com/ui/1.9.2/jquery-ui.js"/>
   
@@ -232,15 +231,6 @@ var popup = L.popup();
 
 //map.on('click', onMapClick);
 
-var marker1 = L.marker([51.5, -0.09], {time: "2013-01-22 08:42:26+01"});
-var marker2 = L.marker([51.6, -0.09], {time: "2013-01-22 10:00:26+01"});
-var marker3 = L.marker([51.7, -0.09], {time: "2013-01-22 10:03:29+01"});
-
-layerGroup = L.layerGroup([marker1, marker2, marker3]);
-var sliderControl = L.control.sliderControl({layer:layerGroup});
-map.addControl(sliderControl);
-sliderControl.startSlider();
-
-  </script>
+</script>
 </body>
 </html>
