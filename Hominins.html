@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="keywords" content="maps, cartography"/>
+	<title>The Hominin Map Project</title>
+
+	<!--put your Bootstrap stylesheet links above style.css-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<!--put your external script links here-->
+	<script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+	
+	<!--begin jumbotron!-->
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>The Hominin Map Project</h1>
+		</div>
+	</div>
+	<!--end jumbotron-->
+	
+	<!--thumbnails start here-->
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="image">
+					<img src="img/hommap.jpg" alt="The Hominin Map Project" width="100%" height="auto"/>
+					<h6> This is my final project from my Graphic Design in Cartography course. I wanted to 
+					make something that both relates to my background and may help others learn about human evolution. 
+					I used Leaflet, which involved the use of html, javascript, and css. Each skull
+					represents an approximate location of a hominin discovery. Click the skulls to learn more about the find,
+					and follow the links to the newly created extension to my website! Here I have created individual pages
+					for most of the discoveries. If there wasn't too much information available, I simply linked to external
+					sources who may be helpful. 
+					
+					<br><br>
+					Note: I do not own any of the material (images, information, etc). I merely tried to collect as much information as I could given 
+					my timeframe and put it all together. If there is enough interest in this, I may continue to update this
+					project as time goes on and new discoveries are found. 
+					
+					<br><br>
+					To view the map, click <a href="test.html">here</a>. To go directly to the Hominin site, click <a href="Genus.html">here</a>.
+					</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end thumbnails-->
+	
+	<!--the navbar-->
+	<nav class="navbar navbar-inverse navbar-fixed-top main-navbar"> <!--Creates navbar-->
+		<div class="container-fluid">
+			<div class="navbar-header"> <!--Creates the navbar header-->
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false" 
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <!--Used for screen 
+					readers for accessibility-->
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+					<span class="menu">Menu</span>
+				</button> <!--Hamburger button for smaller devices-->
+				<a class="navbar-brand" href="index.html">Home</a> <!--Your website brand name-->
+			</div>
+			<div id="navbar" class="collapse navbar-collapse"> <!--Links in navbar-->
+				<ul class="nav navbar-nav"> <!-- Unordered list for links on navbar -->
+					<li><a href="Cartography.html">Cartography</a></li>
+					<li><a href="Graphic_Design.html">Graphic Design</a></li>
+					<li><a href="Writing.html">Writing</a></li>
+					<li><a href="Image_Cleanup.html">Image Cleanup</a></li>
+					<li><a href="AboutMe.html">About Me</a></li>
+					<li><a href="Hominins.html">The Hominin Map Project</a></li>
+				</ul>
+			</div> <!-- end .navbar-collapse -->
+		</div> <!-- end .container -->
+	</nav> <!-- end navigation bar -->
+	
+</body>
+</html>
