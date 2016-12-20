@@ -16,6 +16,31 @@
 	<script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
 	
+	
+	<!--the navbar-->
+	<nav class="navbar navbar-inverse navbar-fixed-top main-navbar"> <!--Creates navbar-->
+		<div class="container-fluid">
+			<div class="navbar-header"> <!--Creates the navbar header-->
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false" 
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <!--Used for screen 
+					readers for accessibility-->
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+					<span class="menu">Menu</span>
+				</button> <!--Hamburger button for smaller devices-->
+				<a class="navbar-brand" href="Genus.html">Back To Genus!</a> <!--Your website brand name-->
+			</div>
+			<div id="navbar" class="collapse navbar-collapse"> <!--Links in navbar-->
+				<ul class="nav navbar-nav"> <!-- Unordered list for links on navbar -->
+					<li><a href="SpeciesHomo.html">Back To Species!</a></li>
+					<li><a href="Neanderthalensis.html">Back to Neanderthalensis!</a></li>
+					<li><a href="test.html">Back to Map!</a></li>
+				</ul>
+			</div> <!-- end .navbar-collapse -->
+		</div> <!-- end .container -->
+	</nav> <!-- end navigation bar -->
+	
 	<!--begin jumbotron!-->
 	<div class="jumbotron">
 		<div class="container text-center">
@@ -47,29 +72,7 @@
 	</div>
 	<!--end thumbnails-->
 	
-	<!--the navbar-->
-	<nav class="navbar navbar-inverse navbar-fixed-top main-navbar"> <!--Creates navbar-->
-		<div class="container-fluid">
-			<div class="navbar-header"> <!--Creates the navbar header-->
-				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#navbar" aria-expanded="false" 
-					aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span> <!--Used for screen 
-					readers for accessibility-->
-					<span class="glyphicon glyphicon-menu-hamburger"></span>
-					<span class="menu">Menu</span>
-				</button> <!--Hamburger button for smaller devices-->
-				<a class="navbar-brand" href="Genus.html">Back To Genus!</a> <!--Your website brand name-->
-			</div>
-			<div id="navbar" class="collapse navbar-collapse"> <!--Links in navbar-->
-				<ul class="nav navbar-nav"> <!-- Unordered list for links on navbar -->
-					<li><a href="SpeciesHomo.html">Back To Species!</a></li>
-					<li><a href="Neanderthalensis.html">Back to Neanderthalensis!</a></li>
-					<li><a href="test.html">Back to Map!</a></li>
-				</ul>
-			</div> <!-- end .navbar-collapse -->
-		</div> <!-- end .container -->
-	</nav> <!-- end navigation bar -->
+	
 
 	
 </body>
