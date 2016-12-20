@@ -74,23 +74,13 @@ span.emphasize{
 		font-weight:bold;
 }
 
-.navbar-nav	{
-		height:30px;
-}
 
-.navbar-brand {
-	
-}
-
-.main-navbar	{
-		height:30px;
-}
 
 .carousel-inner > .item > img {
     margin: 0 auto;
 }
 
-.img-responsive {display:block; height: 5px; width: 50%;}
+.img-responsive {display:block; }
 .item {display:block; height: 400px; width: 100%;}
 .image{display:block; height: 650px; width: 100%;}
 
@@ -114,8 +104,4 @@ span.emphasize{
 }
 .text-danger {
 	font-weight:bold;
-}
-
-.navbar{
-	margin-bottom:0;
 }
