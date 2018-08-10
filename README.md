@@ -1,105 +1,66 @@
-LeafletSlider
-=============
+# [Start Bootstrap - Full Width Pics](https://startbootstrap.com/template-overviews/full-width-pics/)
 
-The [Leaflet](http://leafletjs.com/) Time-Slider enables you to dynamically add and remove Markers on a map by using a [JQuery UI slider
-](http://jqueryui.com/slider/).
+[Full Width Pics](http://startbootstrap.com/template-overviews/full-width-pics/) is an HTML starter template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template features numerous full width background image content sections.
 
+## Preview
 
-Check out the [Demo](http://dwilhelm89.github.io/LeafletSlider/)!
+[![Full Width Pics Preview](https://startbootstrap.com/assets/img/templates/full-width-pics.jpg)](https://blackrockdigital.github.io/startbootstrap-full-width-pics/)
 
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-full-width-pics/)**
 
-Usage
------
-Add:
-* ``SliderControl.js``
-* [JQuery](http://code.jquery.com/jquery-1.9.1.min.js)
-* [JQueryUI - CSS](http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css)
-* [JQueryUI - JS](http://code.jquery.com/ui/1.9.2/jquery-ui.js)
+## Status
 
-to your normal Leaflet map.
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-full-width-pics/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-full-width-pics.svg)](https://www.npmjs.com/package/startbootstrap-full-width-pics)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-full-width-pics.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-full-width-pics)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics?type=dev)
 
+## Download and Installation
 
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/full-width-pics/)
+* Install via npm: `npm i startbootstrap-full-width-pics`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-full-width-pics.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-full-width-pics)
 
+## Usage
 
-To enable the Slider you have to pass in a layer to the SliderControl, add the Slider.
-The Control has to be initialized by using the method startSlider(); on the control.
+### Basic Usage
 
-```javascript
-//Create a marker layer (in the example done via a GeoJSON FeatureCollection)
-var testlayer = L.geoJson(json);
-var sliderControl = L.control.sliderControl({position: "topright", layer: testlayer});
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-//Make sure to add the slider to the map ;-)
-map.addControl(sliderControl);
+### Advanced Usage
 
-//And initialize the slider
-sliderControl.startSlider();
-````
+After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-Adjust the used time property so that it fits your project:
-```javascript
-$('#slider-timestamp').html(options.markers[ui.value].feature.properties.time.substr(0, 19));
-````
+You must have npm and Gulp installed globally on your machine in order to use these features.
 
-You can also use a range-slider by using the range property:
-```javascript
-sliderControl = L.control.sliderControl({position: "topright", layer: testlayer, range: true});
-````
+## Troubleshooting and Help
 
-If you would prefer to display only the markers at the specific timestamp specified by the slider, use
-the follow property:
-```javascript
-sliderControl = L.control.sliderControl({position: "topright", layer: testlayer, follow: 3});
-```
-This example will display the current marker and the previous 2 markers on the screen. Specify a value
-of 1 (or true) to display only a single data point at a time, and a value of null (or false) to display the current marker and all previous markers. The range property overrides the follow property.
+Start Bootstrap has a public Slack channel which is a great place to ask questions about this template and all things related to Start Bootstrap.
 
-You can use the rezoom property to ensure the markers being displayed remain in view. Nothing happens with a value of null (or false), but an integer value will be the maximum zoom level Leaflet uses as it updates the map's bounds for the markers displayed. 
-```javascript
-sliderControl = L.control.sliderControl({position: "topright", layer: testlayer, rezoom: 10});
-```
+**[Click here to join the Slack channel!](https://startbootstrap-slack.herokuapp.com/)**
 
-The Leaflet Slider can also be used for usual LayerGroups with mixed features (Markers and Lines, etc.)
-```javascript
-var marker1 = L.marker([51.5, -0.09], {time: "2013-01-22 08:42:26+01"});
-var marker2 = L.marker([51.6, -0.09], {time: "2013-01-22 10:00:26+01"});
-var marker3 = L.marker([51.7, -0.09], {time: "2013-01-22 10:03:29+01"});
+## Bugs and Issues
 
-var pointA = new L.LatLng(51.8, -0.09);
-var pointB = new L.LatLng(51.9, -0.2);
-var pointList = [pointA, pointB];
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-full-width-pics/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/full-width-pics/).
 
-var polyline = new L.Polyline(pointList, {
-    time: "2013-01-22 10:24:59+01",
-	color: 'red',
-	weight: 3,
-	opacity: 1,
-	smoothFactor: 1
-});
+## About
 
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-layerGroup = L.layerGroup([marker1, marker2, marker3, polyline ]);
-var sliderControl = L.control.sliderControl({layer:layerGroup});
-map.addControl(sliderControl);
-sliderControl.startSlider();
-````
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
 
-For touch support add:
-```javascript
-<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
-````
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-Bower
-----
-Leaflet Slider is also a registered package in [Bower](http://bower.io/) (based on [nodejs](http://nodejs.org/)). Integrate the source in your project with:
-```
-npm install -g bower
-bower install leaflet-slider
-```
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
+## Copyright and License
 
-
-Author
------
-Dennis Wilhelm, 2013
+Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/gh-pages/LICENSE) license.

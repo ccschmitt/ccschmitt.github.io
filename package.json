@@ -1,27 +1,36 @@
 {
-    "name": "LeafletSlider",
-    "author": "Dennis Wilhelm",
-    "version": "1.0.4",
-    "description": "The Leaflet Time-Slider enables you to dynamically add and remove Markers on a map by using a JQuery UI slider.",
+    "title": "Full Width Pics",
+    "name": "startbootstrap-full-width-pics",
+    "version": "4.1.1",
+    "description": "A HTML template featuring sections with full width image backgrounds built with Bootstrap",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/template-overviews/full-width-pics",
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-full-width-pics/issues",
+        "email": "feedback@startbootstrap.com"
+    },
     "license": "MIT",
-    "main": "dist/leaflet.SliderControl.min.js",
-    "dependencies": {
-        "leaflet": "~0.7.x"
-    },
-    "devDependencies": {
-        "grunt": "~0.4.1",
-        "grunt-contrib-concat": "~0.3.0",
-        "grunt-contrib-uglify": "~0.2.2"
-    },
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/dwilhelm89/LeafletSlider.git"
+        "url": "https://github.com/BlackrockDigital/startbootstrap-full-width-pics.git"
     },
-    "keywords": [
-        "map",
-        "gis",
-        "leaflet",
-        "extension",
-        "slider"
-    ]
+    "dependencies": {
+        "bootstrap": "4.1.1",
+        "jquery": "3.3.1"
+    },
+    "devDependencies": {
+        "browser-sync": "2.24.5",
+        "gulp": "^3.9.1"
+    }
 }
