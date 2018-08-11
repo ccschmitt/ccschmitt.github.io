@@ -6,7 +6,6 @@ div#container {
 	border:3px gray dashed;
 }
 
-
 h4	{
 	font-weight:italic;
 	font-family: "Georgia", Charcoal, serif;
@@ -45,15 +44,12 @@ span.emphasize{
 	overflow: hidden;
 }
 
-.portfolio-thumbnail img {
-		height: 400px;
-}
 
 .thumbnail img	{
 	position: absolute;
 	left: 90%;
 	top: 90%;
-	height: 100%;
+	height: auto;
 	width: auto;
 	-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
@@ -64,12 +60,15 @@ span.emphasize{
 	width: 100%;
 	height: auto;
 }
-.navbar-header	{
-		height: 40px;
-		font-weight:bold;
+
+.thumbnail p		{
+	font-size: 15px;
+	color: #000000;
 }
 
-
+.caption p 	{
+	color: #000000
+}
 
 .carousel-inner > .item > img {
     margin: 0 auto;
