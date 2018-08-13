@@ -77,9 +77,13 @@
 	<!--Media-->
 	<div align="center" id="player">
 	<audio id="sound1" src="audio/Bringtherain.mp3" preload="auto"></audio>
-	<button onclick="document.getElementById('sound1').play();">Play it</button>
+	<audio controls>
+	<source src="audio/Bringtherain.mp3" preload="auto">
+	Your browser does not support the audio element.
+	</audio>
 	</div>
 	<br><br>
+	
 	<div class="embed-responsive embed-responsive-16by9">
 		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/torc9P4-k5A" allowfullscreen></iframe>
 	</div>
